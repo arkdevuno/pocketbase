@@ -1,0 +1,20 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Local development
+pb_data/
+*.log
+.env*
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
