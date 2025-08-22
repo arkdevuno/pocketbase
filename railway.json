@@ -10,7 +10,7 @@
   "volumes": [
     {
       "mountPath": "/pb_data",
-      "size": "1GB"
+      "size": "500MB"
     }
   ]
 }
