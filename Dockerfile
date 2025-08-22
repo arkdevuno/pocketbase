@@ -42,4 +42,5 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost:8080/_/ || exit 1
 
 # Start PocketBase server with proper data directory and binding
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pb_data"]
+# CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pb_data"]
+CMD ["sh", "-c", "sleep 5 && /pb/pocketbase serve --http=0.0.0.0:8080 --dir=/pb_data"]
