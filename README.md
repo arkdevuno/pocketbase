@@ -8,9 +8,9 @@ Open-source backend solution for your next SaaS or mobile app, all bundled into 
 - **Easy to Use**: Simple setup for both beginners and experienced developers
 - **Railway Optimized**: Configured for seamless deployment on Railway with persistent volumes
 
-## Quick Deploy
+## Deploy
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/your-template-id)
+Fork this repository and deploy on your Railway account following the manual steps below.
 
 ## Manual Deployment
 
