@@ -28,8 +28,8 @@ RUN adduser -D -s /bin/sh pocketbase && \
 # Set working directory
 WORKDIR /pb
 
-# Create volume for persistent data storage - CRITICAL FOR DATA PERSISTENCE
-VOLUME ["/pb_data"]
+# Railway handles volumes - no VOLUME keyword needed
+# Data will be mounted at /pb_data via Railway volume configuration
 
 # Expose the default PocketBase port
 EXPOSE 8080
