@@ -8,6 +8,10 @@ Open-source backend solution for your next SaaS or mobile app, all bundled into 
 - **Easy to Use**: Simple setup for both beginners and experienced developers
 - **Railway Optimized**: Configured for seamless deployment on Railway with persistent volumes
 
+## Testing persistant volume storage
+
+- Tested volume attached has persistent storage after restarting/redeploying of service or container
+  
 ## Deploy
 
 Fork this repository and deploy on your Railway account following the manual steps below.
