@@ -18,7 +18,7 @@ Fork this repository and deploy on your Railway account following the manual ste
 
 or 
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/01P_Ga?referralCode=3PGZVR&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/pocketbase-0292-clone?referralCode=3PGZVR&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## Manual Deployment
 
