@@ -25,13 +25,9 @@ WORKDIR /pb
 # Expose the default PocketBase port
 EXPOSE 8080
 
-# Longer healthcheck intervals - give more time for startup
+# Health check
 HEALTHCHECK --interval=60s --timeout=10s --start-period=120s --retries=5 \
     CMD wget --no-verbose --tries=1 --spider http://localhost:8080/_/ || exit 1
 
-# Switch to non-root user
-USER pocketbase
-
-# Wait longer for volume mount with timeout
-# CMD ["sh", "-c", "echo 'Waiting for volume mount...' && timeout=60 && while [ ! -d /pb_data ] && [ $timeout -gt 0 ]; do echo 'Volume not ready, waiting... ($timeout seconds left)'; sleep 5; timeout=$((timeout-5)); done && if [ ! -d /pb_data ]; then echo 'Volume mount failed after 60 seconds'; exit 1; fi && echo 'Volume mounted successfully, starting PocketBase...' && /pb/pocketbase serve --http=0.0.0.0:8080 --dir=/pb_data"]
-CMD ["sh", "-c", "echo 'Volume check:' && ls -la /pb_data && df -h /pb_data && echo 'Testing write permissions...' && touch /pb_data/test.txt && rm /pb_data/test.txt && echo 'Starting PocketBase with optimized settings...' && /pb/pocketbase serve --http=0.0.0.0:8080 --dir=/pb_data --queryTimeout=5"]
+# Start as root, fix permissions, then switch to pocketbase user
+CMD ["sh", "-c", "echo 'Fixing volume permissions...' && chown -R pocketbase:pocketbase /pb_data && echo 'Starting PocketBase...' && su pocketbase -c '/pb/pocketbase serve --http=0.0.0.0:8080 --dir=/pb_data'"]
