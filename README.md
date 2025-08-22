@@ -66,10 +66,6 @@ Fork this repository and deploy on your Railway account following the manual ste
   ]
 }
 ```
-## Deploying:
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Oasf2M?referralCode=jlaranjo)
-
 ## Troubleshooting
 
 ### Common Issues
