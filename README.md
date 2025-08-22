@@ -12,13 +12,6 @@ Open-source backend solution for your next SaaS or mobile app, all bundled into 
 
 - Tested volume attached has persistent storage after restarting/redeploying of service or container
   
-## Deploy
-
-Fork this repository and deploy on your Railway account following the manual steps below.
-
-or 
-
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/pocketbase-0292-clone?referralCode=3PGZVR&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## Manual Deployment
 
@@ -165,29 +158,8 @@ Set in Railway dashboard or add to `railway.json`:
 pocketbase/
 ├── Dockerfile              # Container configuration
 ├── railway.json            # Railway deployment config
-├── README.md              # This file
-├── LICENSE                # MIT License
+├── README.md               # This file
 ```
 
-## Documentation
 
-For detailed PocketBase documentation:
-- [Official PocketBase Docs](https://pocketbase.io/docs)
-- [Railway Documentation](https://docs.railway.app)
-- [PocketBase API Reference](https://pocketbase.io/docs/api-records)
 
-## Contributing
-
-We welcome contributions! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
